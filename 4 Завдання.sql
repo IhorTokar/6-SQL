@@ -1,7 +1,7 @@
 USE CulinaryForum;
 GO
 
--- Умовне з’єднання таблиць Recipes та Recipe_Ingredients за recipe_id, та Ingredients для отримання назви інгредієнтів
+-- РЈРјРѕРІРЅРµ Р·вЂ™С”РґРЅР°РЅРЅСЏ С‚Р°Р±Р»РёС†СЊ Recipes С‚Р° Recipe_Ingredients Р·Р° recipe_id, С‚Р° Ingredients РґР»СЏ РѕС‚СЂРёРјР°РЅРЅСЏ РЅР°Р·РІРё С–РЅРіСЂРµРґС–С”РЅС‚С–РІ
 SELECT Recipes.title AS RecipeTitle, Ingredients.name AS IngredientName, Recipe_Ingredients.quantity
 FROM Recipes
 INNER JOIN Recipe_Ingredients ON Recipes.recipe_id = Recipe_Ingredients.recipe_id
